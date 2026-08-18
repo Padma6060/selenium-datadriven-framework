@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReader {
 
-    public static Object[][] readData(String filePath, String sheetName) throws Exception {
+public static Object[][] readData(String filePath, String sheetName) throws Exception {
        FileInputStream fis = new FileInputStream(filePath);
        Workbook workbook = new XSSFWorkbook(fis);
        Sheet sheet = workbook.getSheet(sheetName);
@@ -29,5 +29,9 @@ public class ExcelReader {
         fis.close();
         return data;
 
-    }
+
 }
+
+}
+
+
