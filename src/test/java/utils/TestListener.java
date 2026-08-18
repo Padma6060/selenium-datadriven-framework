@@ -18,6 +18,7 @@ public class TestListener implements ITestListener {
         ExtentSparkReporter spark = new ExtentSparkReporter("reports/ExtentReport.html");
         extent = new ExtentReports();
         extent.attachReporter(spark);
+        
 }
     public void onTestStart(ITestResult r) {
         test.set(extent.createTest(r.getMethod().getMethodName()));

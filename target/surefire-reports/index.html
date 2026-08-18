@@ -103,12 +103,12 @@
                     <div class="method-list-content passed suite-EcommerceSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EcommerceSuite" title="tests.LoginDataDrivenTest" class="method navigator-link" hash-for-method="testLogin(invalid_user, wrong_pass, error)">testLogin(invalid_user, wrong_pass, error)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-EcommerceSuite" title="tests.LoginDataDrivenTest" class="method navigator-link" hash-for-method="testLogin(standard_user , secret_sauce, success)">testLogin(standard_user , secret_sauce, success)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EcommerceSuite" title="tests.LoginDataDrivenTest" class="method navigator-link" hash-for-method="testLogin(standard_user , secret_sauce, success)">testLogin(standard_user , secret_sauce, success)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-EcommerceSuite" title="tests.LoginDataDrivenTest" class="method navigator-link" hash-for-method="testLogin(invalid_user, wrong_pass, error)">testLogin(invalid_user, wrong_pass, error)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -136,18 +136,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin(invalid_user, wrong_pass, error)">
-                  </a> <!-- testLogin(invalid_user, wrong_pass, error) -->
-                  <span class="method-name">testLogin</span>
-                  <span class="parameters">(invalid_user,wrong_pass,error)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testLogin(standard_user , secret_sauce, success)">
                   </a> <!-- testLogin(standard_user , secret_sauce, success) -->
                   <span class="method-name">testLogin</span>
                   <span class="parameters">(standard_user ,secret_sauce,success)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(invalid_user, wrong_pass, error)">
+                  </a> <!-- testLogin(invalid_user, wrong_pass, error) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(invalid_user,wrong_pass,error)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -170,6 +170,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;EcommerceSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;EcommerceTests&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.LoginDataDrivenTest&quot;/&gt;
@@ -216,20 +219,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testLogin')
 data.setCell(0, 2, 'tests.LoginDataDrivenTest')
-data.setCell(0, 3, 6995);
+data.setCell(0, 3, 8293);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testLogin')
 data.setCell(1, 2, 'tests.LoginDataDrivenTest')
-data.setCell(1, 3, 3439);
+data.setCell(1, 3, 5462);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testLogin')
 data.setCell(2, 2, 'tests.LoginDataDrivenTest')
-data.setCell(2, 3, 2069);
+data.setCell(2, 3, 3017);
 window.suiteTableData['EcommerceSuite']= { tableData: data, tableDiv: 'times-div-EcommerceSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-EcommerceSuite">
               </div> <!-- times-div-EcommerceSuite -->
             </div> <!-- times-div -->
@@ -262,35 +265,35 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLogin(standard_user , secret_sauce, success)</span>
-                <span class="method-start">32461 ms</span>
+                <span class="method-start">51080 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40097 ms</span>
+                <span class="method-start">56582 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">43913 ms</span>
+                <span class="method-start">63232 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLogin(locked_out_user, secret_sauce, error)</span>
-                <span class="method-start">60994 ms</span>
+                <span class="method-start">89739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64435 ms</span>
+                <span class="method-start">98037 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">67603 ms</span>
+                <span class="method-start">106910 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLogin(invalid_user, wrong_pass, error)</span>
-                <span class="method-start">81953 ms</span>
+                <span class="method-start">135105 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">84028 ms</span>
+                <span class="method-start">138127 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
